@@ -8,17 +8,17 @@ ENV APACHE_HADOOP_VERSION 3.2.0
 ENV ZEPPELIN_VERSION 0.8.1
 
 RUN apt-get update && apt-get install wget
-# RUN set -x \
-#     && curl -fSL "http://www-eu.apache.org/dist/zeppelin/zeppelin-0.7.2/zeppelin-0.7.2-bin-all.tgz" -o /tmp/zeppelin.tgz \
-#     && tar -xzvf /tmp/zeppelin.tgz -C /opt/ \
-#     && mv /opt/zeppelin-* /opt/zeppelin \
-#     && rm /tmp/zeppelin.tgz
+RUN set -x \
+    && curl -fSL "https://www-eu.apache.org/dist/zeppelin/zeppelin-${ZEPPELIN_VERSION}/zeppelin-${ZEPPELIN_VERSION}-bin-all.tgz" -o /tmp/zeppelin.tgz \
+    && tar -xzvf /tmp/zeppelin.tgz -C /opt/ \
+    && mv /opt/zeppelin-* /opt/zeppelin \
+    && rm /tmp/zeppelin.tgz
 
-COPY zeppelin-${ZEPPELIN_VERSION}-bin-all.tgz /tmp/zeppelin.tgz
-RUN tar -xvzf /tmp/zeppelin.tgz -C /opt/ \
-    && mv /opt/zeppelin-${ZEPPELIN_VERSION}-bin-all /opt/zeppelin \
-    && rm /tmp/zeppelin.tgz \
-    && cd /
+# COPY zeppelin-${ZEPPELIN_VERSION}-bin-all.tgz /tmp/zeppelin.tgz
+# RUN tar -xvzf /tmp/zeppelin.tgz -C /opt/ \
+#     && mv /opt/zeppelin-${ZEPPELIN_VERSION}-bin-all /opt/zeppelin \
+#     && rm /tmp/zeppelin.tgz \
+#     && cd /
 
 # ENV SPARK_SUBMIT_OPTIONS "--jars /opt/zeppelin/sansa-examples-spark-2016-12.jar"
 
