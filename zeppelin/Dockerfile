@@ -1,10 +1,10 @@
-ARG SPARK_BASE=2.4.3-hadoop3.2.0
+ARG SPARK_BASE=2.4.3-hadoop3.2.1
 FROM nvtienanh/spark-base:${SPARK_BASE}
 
 LABEL MAINTAINER = "Anh Nguyen <nvtienanh@gmail.com>" 
 
 ENV APACHE_SPARK_VERSION 2.4.3
-ENV APACHE_HADOOP_VERSION 3.2.0
+ENV APACHE_HADOOP_VERSION 3.2.1
 ENV ZEPPELIN_VERSION 0.8.1
 
 RUN apt-get update && apt-get install wget
