@@ -1,8 +1,17 @@
-[![Build Status](https://travis-ci.org/nvtienanh/docker-zeppelin.svg?branch=master)](https://travis-ci.org/nvtienanh/docker-zeppelin)
+# Apache Zeppelin
 
-# Docker Zeppelin
+[![CI status](https://github.com/nvtienanh/docker-zeppelin/workflows/CI/badge.svg?branch=0.8.2-alpine)](https://github.com/nvtienanh/docker-zeppelin/actions?query=branch%3A+branch%3A0.8.2-alpine++)
+[![Docker Version](https://images.microbadger.com/badges/version/nvtienanh/zeppelin:0.8.2-alpine.svg)](https://hub.docker.com/r/nvtienanh/zeppelin/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/nvtienanh/zeppelin)](https://hub.docker.com/r/nvtienanh/zeppelin/)
+[![Docker Layers](https://img.shields.io/microbadger/layers/nvtienanh/zeppelin/0.8.2-alpine)](https://hub.docker.com/r/nvtienanh/zeppelin/)
 
-This repository contains [Apache Zeppelin](https://zeppelin.apache.org/) docker image, which is tuned to work with BDE clusters.
+Docker image infomation:
+* Linux: alphine `3.9`
+* Spark `2.4.4`
+* Hadoop `3.2.1`
+* Zeppelin `0.8.2` (Binary package with all interpreters)
+* Miniconda `4.7.12.1`
+* Python `3.7` supports Pyspark, Matplotlib, ...
 
 # Example Usage
 

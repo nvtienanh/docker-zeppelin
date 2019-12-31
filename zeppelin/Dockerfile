@@ -6,10 +6,10 @@ ARG VCS_REF
 ARG ZEPPELIN_VERSION
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
-        org.label-schema.name="Apache Airflow" \
-        org.label-schema.description="An Apache Airflow docker image based on Alpine Linux" \
+        org.label-schema.name="Apache Zeppelin" \
+        org.label-schema.description="An Apache Zeppelin docker image based on Alpine Linux" \
         org.label-schema.vcs-ref=$VCS_REF \
-        org.label-schema.vcs-url="https://github.com/nvtienanh/docker-airflow" \
+        org.label-schema.vcs-url="https://github.com/nvtienanh/docker-zeppelin" \
         org.label-schema.vendor="nvtienanh" \
         org.label-schema.version=$ZEPPELIN_VERSION \
         org.label-schema.schema-version="1.0"
