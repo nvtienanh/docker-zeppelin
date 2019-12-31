@@ -40,4 +40,4 @@ deploy() {
 
 deploy zeppelin $IMAGE_TAG $ZEPPELIN_VERSION 2.4.4-alpine
 # Update Microbadger
-# curl -X POST https://hooks.microbadger.com/images/nvtienanh/hadoop-base/CA79IP9AVi0mpSaTDfi9k4POrdQ=
+curl -X POST https://hooks.microbadger.com/images/nvtienanh/zeppelin/X8D_8YdknhUZiRvtXEJUTmYJSkk=
