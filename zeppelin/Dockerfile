@@ -1,11 +1,18 @@
-ARG SPARK_BASE=2.4.3-hadoop3.2.1
+ARG SPARK_BASE
 FROM nvtienanh/spark-base:${SPARK_BASE}
 
-LABEL MAINTAINER = "Anh Nguyen <nvtienanh@gmail.com>" 
+ARG BUILD_DATE
+ARG VCS_REF
+ARG ZEPPELIN_VERSION
 
-ENV APACHE_SPARK_VERSION 2.4.3
-ENV APACHE_HADOOP_VERSION 3.2.1
-ENV ZEPPELIN_VERSION 0.8.1
+LABEL org.label-schema.build-date=$BUILD_DATE \
+        org.label-schema.name="Apache Zeppelin" \
+        org.label-schema.description="An Apache Zeppelin docker image based on Debian Linux" \
+        org.label-schema.vcs-ref=$VCS_REF \
+        org.label-schema.vcs-url="https://github.com/nvtienanh/docker-zeppelin" \
+        org.label-schema.vendor="nvtienanh" \
+        org.label-schema.version=$ZEPPELIN_VERSION \
+        org.label-schema.schema-version="1.0"
 
 RUN apt-get update && apt-get install wget
 RUN set -x \
