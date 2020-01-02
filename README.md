@@ -1,9 +1,9 @@
 # Apache Zeppelin
 
-[![CI status](https://github.com/nvtienanh/docker-zeppelin/workflows/CI/badge.svg?branch=0.8.2-debian)](https://github.com/nvtienanh/docker-zeppelin/actions?query=branch%3A+branch%3A0.8.2-debian++)
-[![Docker Version](https://images.microbadger.com/badges/version/nvtienanh/zeppelin:0.8.2-debian.svg)](https://hub.docker.com/r/nvtienanh/zeppelin/)
+[![CI status](https://github.com/nvtienanh/docker-zeppelin/workflows/CI/badge.svg?branch=master)](https://github.com/nvtienanh/docker-zeppelin/actions?query=branch%3A+branch%3Amaster++)
+[![Docker Version](https://images.microbadger.com/badges/version/nvtienanh/zeppelin:latest.svg)](https://hub.docker.com/r/nvtienanh/zeppelin/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/nvtienanh/zeppelin)](https://hub.docker.com/r/nvtienanh/zeppelin/)
-[![Docker Layers](https://img.shields.io/microbadger/layers/nvtienanh/zeppelin/0.8.2-debian)](https://hub.docker.com/r/nvtienanh/zeppelin/)
+[![Docker Layers](https://img.shields.io/microbadger/layers/nvtienanh/zeppelin/latest)](https://hub.docker.com/r/nvtienanh/zeppelin/)
 
 Docker image infomation:
 * Linux: Debian `9`
